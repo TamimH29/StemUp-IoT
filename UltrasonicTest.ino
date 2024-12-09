@@ -113,42 +113,5 @@ void loop() {
 
 }
 
-/*#include <FB_Const.h>
-#include <FB_Error.h>
-#include <FB_Network.h>
-#include <FB_Utils.h>
-#include <Firebase.h>
-#include <FirebaseFS.h>
-#include <WiFi.h>
-#include <Firebase_ESP_Client.h>
-const char* ssid= "1";
-const char* password= "12345678";
-FirebaseAuth auth;
-FirebaseConfig config;
-FirebaseData firebaseData;
-void setup(){
-  Serial.begin(9600);
-  WiFi.begin(ssid, password);
-  WiFi.setSleep(false);
-  while (WiFi.status() != WL_CONNECTED){
-    delay(500);
-    Serial.print(".");
-  }
-  Serial.println("");
-  Serial.println("WiFi connected");
-  config.host= "https://stemup-convergent-24-default-rtdb.firebaseio.com/";
-  config.api_key = "AIzaSyD0bc3hndYuWWA5ECv2Hc_TYzPcRvD1PtU";
-  auth.user.email = "johnnyshen0630@gmail.com";
-  auth.user.password = "103170";
-  Firebase.begin(&config, &auth);
-  if (Firebase.ready()){
-    Serial.println("Connected to Firebase");
-  }else{
-    Serial.println("Failed to connect to Firebase");
-  }
-}
-void loop(){
-  float x= 20;
-  Firebase.RTDB.setFloat(&firebaseData, "/sensor/temperature", x);*/
 
   
